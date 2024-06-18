@@ -64,7 +64,11 @@ const LoginPage = () => {
                     <br></br>
 
                     <Form.Group>
-                        <Button as="sub" variant="primary" onClick={handleSubmit(loginUser)}>Login</Button>
+                    <Button
+                        as="sub"
+                        variant="primary"
+                        onClick={handleSubmit(loginUser)}
+                        style={{ padding: '10px 20px', fontSize: '12px' }}>Login</Button>
                     </Form.Group>
                     <br></br>
                     <Form.Group>

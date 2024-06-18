@@ -128,7 +128,11 @@ const SignUpPage = () => {
                     </Form.Group>
                     <br></br>
                     <Form.Group>
-                        <Button variant="primary" type="submit" onClick={handleSubmit(submitForm)}>SignUp</Button>
+                    <Button
+                        variant="primary"
+                        type="submit"
+                        onClick={handleSubmit(submitForm)}
+                        style={{ padding: '10px 20px', fontSize: '14px' }}>SignUp</Button>
                     </Form.Group>
                     <br></br>
                     <Form.Group>
