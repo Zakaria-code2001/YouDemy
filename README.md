@@ -2,7 +2,7 @@
 
 #### Video Demo:  `<URL HERE>`
 #### Description:
-My Readme.m
+My readme
 
 ## Table of Contents
 
@@ -66,7 +66,12 @@ To set up the project locally, follow these steps:
 
 - **Frontend**: JavaScript with React
 - **Backend**: Python with Flask
+  - **REST API**: Built using Flask-RESTful for providing endpoints to interact with playlists and videos.
 - **Database**: SQLAlchemy with SQLite
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your suggested changes.
 
 ## License
 
