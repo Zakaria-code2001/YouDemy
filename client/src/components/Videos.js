@@ -57,7 +57,7 @@ const VideosPage = () => {
     const handleDelete = (video) => {
         setVideoToDelete(video);
         deleteVideo();
-        window.location.reload();
+        fetchVideos();
     };
 
     const deleteVideo = () => {
