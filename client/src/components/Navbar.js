@@ -29,7 +29,7 @@ const LoggedOutLinks = () => {
         <a className="nav-link active text-white" href="#about">About</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link active text-white" href="#services">Services</a>
+        <a className="nav-link active text-white" href="#services">Features</a>
       </li>
       <li className="nav-item">
         <a className="nav-link active text-white" href="#contact">Contact Us</a>

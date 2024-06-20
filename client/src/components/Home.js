@@ -97,8 +97,8 @@ const LoggedOutHome = () => {
                 <span className="fa-stack fa-4x">
                   <FontAwesomeIcon icon={faShareAlt} className="fa-stack-1x fa-inverse" />
                 </span>
-                <h4 className="my-3">Share with Friends</h4>
-                <p style={{ color: '#ddd' }}>Share your favorite playlists with your friends.</p>
+                <h4 className="my-3">Copy and paste links</h4>
+                <p style={{ color: '#ddd' }}>Copy and paste links and enjoy crafting new playlists</p>
               </div>
             </div>
           </div>
