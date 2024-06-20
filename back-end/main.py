@@ -30,7 +30,7 @@ def create_app(config):
     app = Flask(__name__)
     app.config.from_object(config)
     db.init_app(app)
-    CORS(app, resources={r"/*": {"origins": "https://portfolio-project-1-vs55.onrender.com"}})
+    CORS(app, resources={r"/*": {"origins": "https://youdemy-yuh4.onrender.com"}})
 
     migrate = Migrate(app, db)
     JWTManager(app)
