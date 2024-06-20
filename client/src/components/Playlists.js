@@ -27,7 +27,7 @@ const PlaylistsPage = () => {
        const user_id = decodedToken.sub;
 
 
-       fetch(`/playlist_video/playlists?user_id=${user_id}`, {
+       fetch(`${BASEURL}/playlist_video/playlists?user_id=${user_id}`, {
            headers: {
                'Authorization': `Bearer ${JSON.parse(token)}`,
                'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ const PlaylistsPage = () => {
        };
 
 
-       fetch(`/playlist_video/playlist/${playlistToDelete}`, requestOptions)
+       fetch(`${BASEURL}/playlist_video/playlist/${playlistToDelete}`, requestOptions)
            .then(res => {
                if (!res.ok) {
                    throw new Error('Network response was not ok');
@@ -128,7 +128,7 @@ const PlaylistsPage = () => {
        };
 
 
-       fetch(`/playlist_video/playlist/${playlistId}`, requestOptions)
+       fetch(`${BASEURL}/playlist_video/playlist/${playlistId}`, requestOptions)
            .then(res => {
                if (!res.ok) {
                    throw new Error('Network response was not ok');
@@ -168,7 +168,7 @@ const PlaylistsPage = () => {
        };
 
 
-       fetch(`/playlist_video/playlists`, requestOptions)
+       fetch(`${BASEURL}/playlist_video/playlists`, requestOptions)
            .then(res => {
                if (!res.ok) {
                    throw new Error('Network response was not ok');
@@ -264,7 +264,7 @@ const PlaylistsPage = () => {
                 <Button variant="secondary" onClick={closeModal}>Cancel</Button>
                 <Button variant="danger" onClick={() => {
                     deletePlaylist();
-                    window.location.href = 'http://localhost:3000/';
+                    window.location.href = '/';
                   }}>Delete</Button>
             </Modal.Footer>
         </Modal>

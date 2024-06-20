@@ -25,7 +25,7 @@ const VideosPage = () => {
         const user_id = decodedToken.sub;
 
 
-        fetch(`/playlist_video/playlists?user_id=${user_id}`, {
+        fetch(`${BASEURL}/playlist_video/playlists?user_id=${user_id}`, {
            headers: {
                'Authorization': `Bearer ${JSON.parse(token)}`,
                'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const VideosPage = () => {
     
     
     const fetchVideos = () => {
-        fetch(`/playlist_video/playlist/${playlist_id}/videos`)
+        fetch(`${BASEURL}/playlist_video/playlist/${playlist_id}/videos`)
             .then(response => response.json())
             .then(data => {
                 setVideos(data);
@@ -62,7 +62,7 @@ const VideosPage = () => {
 
     const deleteVideo = () => {
         const token = localStorage.getItem('REACT_TOKEN_AUTH_KEY');
-        fetch(`/playlist_video/playlist/${playlist_id}/video/${videoToDelete.id}`, {
+        fetch(`${BASEURL}/playlist_video/playlist/${playlist_id}/video/${videoToDelete.id}`, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${JSON.parse(token)}`,
@@ -91,7 +91,7 @@ const VideosPage = () => {
             url: url
         };
         const token = localStorage.getItem('REACT_TOKEN_AUTH_KEY');
-        fetch(`/playlist_video/playlist/${playlist_id}/videos`, {
+        fetch(`${BASEURL}/playlist_video/playlist/${playlist_id}/videos`, {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${JSON.parse(token)}`,

@@ -30,7 +30,7 @@ const SignUpPage = () => {
                 body: JSON.stringify(body)
             }
 
-            fetch(`/auth/signup`, requestOptions)
+            fetch(`${BASEURL}/auth/signup`, requestOptions)
                 .then(res => res.json())
                 .then(data =>{ 
                     console.log(data)

@@ -26,7 +26,7 @@ const LoginPage = () => {
         }
 
         // Use BASEURL constant in fetch request
-        fetch(`/auth/login`, requestOptions)
+        fetch(`${BASEURL}/auth/login`, requestOptions)
             .then(res => res.json())
             .then(data => {
                 console.log(data.access_token)
