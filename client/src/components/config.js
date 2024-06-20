@@ -1,4 +1,4 @@
 // config.js
-const BASEURL = "https://portfolio-project-rpun.onrender.com";
+const BASEURL = "https://youdemy-backend.onrender.com";
 
 export default BASEURL;
