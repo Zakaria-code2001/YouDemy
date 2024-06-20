@@ -54,7 +54,7 @@ const LoggedOutHome = () => {
             <div className="container">
               <h1>Welcome to YouDemy</h1>
               <p>Your journey to amazing learning starts here.</p>
-              <Link to='/Playlists' className="btn">Get Started</Link>
+              <Link to='/Login' className="btn">Get Started</Link>
             </div>
           </section>
   
